@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BloomSearch</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- JQuery SRI Hash -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" 
+    crossorigin="anonymous"></script>
+
+    <!-- JQuery UI Theme SRI Hash -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/overcast/jquery-ui.css" 
+    integrity="sha384-f0S4kQhjBSAG8v7F61nXOOnTTU2pjK8cCk7zIOvAt2ItNK9gSgwf8vgKlZlS6DmR" 
+    crossorigin="anonymous">
+
+    <!-- JQuery UI SRI Hash-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js" 
+    integrity="sha384-8EM386r8XMMzwGPUxfGNr6c1wIOYnPQBJ6VFxzKCZeklpQarHoZGB40kdNDA3gYr" 
+    crossorigin="anonymous"></script>
+
+    <!-- Font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    
+    <div class= "content">
+        <div class="name-container">
+            <h1 onclick=switchBackground() id="title">BloomSearch</h1>
+        </div>  
+        <div class="search-bar">
+            <input type="text" id="query" placeholder="Search...">
+        </div>
+
+        <div class="button-container">
+            <button onclick = searchClick() id="search-button" class="button">Search</button>
+            <button onclick= showTime() id="time-button" class="button">Current Time</button>
+        </div>
+
+        <div id="time">
+
+        </div>
+
+        <div id="searchResults"></div>
+
+
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+
+    
+
+
+</body>
+
+</html>
